@@ -40,7 +40,7 @@ export default function InputForm({ onSubmit, loading }: InputFormProps) {
             rows={8}
             value={algorithmName}
             onChange={(e) => setAlgorithmName(e.target.value)}
-            placeholder="e.g., Longest Palindrome Substring"
+            placeholder="e.g., Longest Palindrome Substring or Paste Code Here"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             required
           />
