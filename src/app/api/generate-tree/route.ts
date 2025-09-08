@@ -25,9 +25,15 @@ export async function POST(request: NextRequest) {
     
     const prompt = `Create a detailed ASCII-style text flow diagram for ${algorithm}'. Format the output exactly like this structure:
 
+**Output Requirements:**
+- Start directly with the code and algorithm flow diagram - no introductory text
+- No explanatory sentences before the diagram
+- No "Here's the diagram" or similar opening statements
+- Begin immediately with the ASCII tree structure
+
 Start with:
 - The Actual Code Snippet
-- A brief description of what the code does
+- A short description of what the code does
 - Initial state showing input and variable initialization
 - Use tree-like ASCII characters (├──, │, └──, |, v) to show flow
 - Show each loop iteration as a main branch
